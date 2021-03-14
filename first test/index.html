@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <meta charset="utf-8"/>
+        <title>留言板</title>
+        <script type="text/javascript" src="js/plugins/submit.js"></script>
+        <link rel="stylesheet" href="css/layouts/txt.css" type="text/css">
+    </head>
+    <body>
+        <div class="main_body" style="overflow:auto">
+            <div id="search">
+                <img src="imgs/logo.png" alt="baidu logo">
+                <input type="text" placeholder="">
+                <button type="button" id="search_button">进入贴吧</button>
+            </div>
+            <div id="lis">
+                <ol id="text_li" style="list-style: none;">
+                </ol>
+            </div>
+            
+            <div id="txt">
+                <textarea  id="username" value="" placeholder="请输入用户名" cols="80" rows="2" style="resize: none;"></textarea><br>
+                <textarea  id="text" value="" cols="80" rows="10" style="resize: none;"></textarea><br>
+                
+               
+            </div>
+            <button type="button" id="btn" onclick="empty()" >清空</button>
+                <button type="button" id="btn" onclick="msg()">评论留言</button>
+        </div>
+      </body>
+   </html>
