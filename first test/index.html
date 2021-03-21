@@ -4,7 +4,8 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
         <meta charset="utf-8"/>
         <title>留言板</title>
-        <script type="text/javascript" src="js/plugins/submit.js"></script>
+        <script type="text/javascript" src="js/controllers/submit.js"></script>
+        <script type="text/javascript" src="js/plugins/userImage.js"></script>
         <link rel="stylesheet" href="css/layouts/txt.css" type="text/css">
     </head>
     <body>
@@ -19,14 +20,14 @@
                 </ol>
             </div>
             
-            <div id="txt">
-                <textarea  id="username" value="" placeholder="请输入用户名" cols="80" rows="2" style="resize: none;"></textarea><br>
-                <textarea  id="text" value="" cols="80" rows="10" style="resize: none;"></textarea><br>
-                
-               
+            <div id="commentTextArea">
+                <img src="imgs/userImage.jpeg" id="userImage" alt="userImage" style="transform: scaleX(); width: 40px; height: 70px;"><br>
+                <textarea id="username" value="" placeholder="请输入用户名" cols="80" rows="2" style="resize: none;"></textarea><br>
+                <textarea id="text" value="" cols="80" rows="10" style="resize: none;"></textarea><br>
             </div>
-            <button type="button" id="btn" onclick="empty()" >清空</button>
-                <button type="button" id="btn" onclick="msg()">评论留言</button>
+                <button type="button" id="clearCommentBtn" onclick="clearComment()" >清空</button>
+                <button type="button" id="submitCommentBtn" onclick="msg()">评论留言</button>
+                <button type="button" id="changeUserImageBtn" onclick="changeUserImage()" >修改用户头像</button>
         </div>
       </body>
    </html>

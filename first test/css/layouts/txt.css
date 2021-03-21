@@ -1,13 +1,13 @@
-#txt{
+#commentTextArea{
     width: 80%;
     margin: 0 auto;
     bottom:0px;
     left:0px;
     
 }
-#btn{
+/*#btn{
     text-align:right;
-}
+}*/
 #username{
     
     bottom:0px;
